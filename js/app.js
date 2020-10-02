@@ -199,7 +199,7 @@ function nuevaSimulacion(e) {
     }, 5000);*/
 
     //Limpiar
-    inversion.value = '';
+    //inversion.value = '';
     plazo.value = '';
 
     //Reiniciar el formulario
