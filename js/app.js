@@ -274,7 +274,7 @@ function addOptions(domElement, array) {
 //Formato Inputo Número
 //$(".numeric").inputmask({
 $("input[data-type='currency']").inputmask({
-    groupSeparator: ".",
+    groupSeparator: ",",
     alias: "integer",
     placeholder: "0",
     autoGroup: !0,
