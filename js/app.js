@@ -88,22 +88,10 @@ function ejecutarAPP(e) {
 function nuevaSimulacion(e) {
     //e.preventDefault();
 
-
-    //limpiarHTML();
-
     // Textarea donde el usuario escribe
     inversionInput = inversion.value
     plazoInput = parseInt(plazo.value)
     inver = Number(inversionInput.replace(/,/g, ''));
-
-
-
-    /*document.getElementById("userinput").onblur = function() {
-        //number-format the user input 
-        this.value = parseFloat(this.value.replace(/,/g, "")).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        //set the numeric value to a number input 
-        document.getElementById("number").value = this.value.replace(/,/g, "")
-    }*/
 
     //validar
     if (isNaN(inver) || isNaN(plazoInput)) {
@@ -199,7 +187,7 @@ function nuevaSimulacion(e) {
     }, 5000);*/
 
     //Limpiar
-    //inversion.value = '';
+    inversion.value = '';
     plazo.value = '';
 
     //Reiniciar el formulario
