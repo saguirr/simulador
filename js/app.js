@@ -123,14 +123,16 @@ function nuevaSimulacion(e) {
 
     }
 
-    Inver = formatterPeso.format(inver)
+    //Inver = formatterPeso.format(inver)
+    Inver = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(inver);
     tasaPer = tasaPeriodo * 100;
     interes = inver * tasaPeriodo;
     intTotal = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(interes);
     subTotal = inver + interes;
     totalRtfe = Math.round10((interes * rtfe), 0);
     retencion = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(totalRtfe);
-    totalGeneral = formatterPeso.format(Math.round10(subTotal - totalRtfe, 0));
+    //totalGeneral = formatterPeso.format(Math.round10(subTotal - totalRtfe, 0));
+    totalGeneral = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(Math.round10(subTotal - totalRtfe, 0));
 
     const divResultado = document.createElement('div');
     divResultado.classList.add('resultado', 'p-3');
