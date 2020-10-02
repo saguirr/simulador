@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador CDAT</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    
+</head>
+<body>
+<header>
+     <center><img src="https://feproteccion.com.co/wp-content/uploads/2019/03/logo_fondo.png" width="250" height="150" alt=""/></center>
+     <br>
+     <br>
+</header>
+    <!--<h2 class="text-center my-5 titulo">SIMULACIÓN DE CDAT FONDO DE EMPLEADO PROTECCIÓN</h2>-->
+    <h1 class="text-center ">SIMULADOR CDAT - FONDO DE EMPLEADOS PROTECCIÓN</h1>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-simulacion">
+                <form id="simular-cdat">
+                    <h2><legend class="mb-4 text-center">DATOS DEL CDAT</legend></h2>
+                    <div class="form-group row">
+                        <!--<label class="col-sm-4 col-lg-4 col-form-label">Inversión:</label>-->
+                        <h2 class="col-sm-4 col-lg-4">Inversión:</h2>
+                        <div class="col-sm-8 col-lg-8">                        
+                            <input type="text" id="inversion" class="form-control" data-type="currency">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <!--<label class="col-sm-4 col-lg-4 col-form-label">Plazo:</label>-->
+                        <h2 class="col-sm-4 col-lg-4">Plazo Días:</h2>
+                        <div class="col-sm-8 col-lg-8">
+                            <!--<input type="text" id="plazo" name="plazo" class="form-control"  placeholder="Plazo">-->
+                            <select type="text" id="plazo" name="plazo" class="form-control"  placeholder="Plazo"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <!--<button type="submit" class="btn btn-primary w-50 d-block">Simular</button>-->
+                            <button type="submit" class="button1 w-50 d-block">Simular</button>
+                    </div>
+                    <div class="form-group">                                   
+                            <button type="button" value="Borrar" id="borrar" class="button2 w-50 d-block" onclick="location.reload()">Limpiar</button>
+                    </div>
+                   </form>
+            </div>
+            <div id="resultado" class="col-md-6">
+                <h2 id="administra" class="text-center">RESULTADO</h2>
+                <ul id="simulacion" class="list-group lista-simulacion"></ul>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
+<div class="container-fluid">
+<!--<hr style="border-top: 2px solid #0072b9;">-->
+    <span style="color: #000000">
+     <strong>Nota:</strong>
+             Los valores resultantes de esta simulación son de carácter informativo y pueden estar sujetos a variación al 
+             momento de la apertura del CDAT conforme a las tasas de interés y plazos vigentes en el reglamento de Ahorros
+             del Fondo de Empleados Protección**
+    </span>
+	
+	</div>
