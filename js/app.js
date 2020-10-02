@@ -149,32 +149,32 @@ function nuevaSimulacion(e) {
 
     //Scripting d elos elementos de la simulación
     const inversionParrafo = document.createElement('h2');
-    inversionParrafo.classList.add('card-title', 'font-weight-bolder');
+    inversionParrafo.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     inversionParrafo.innerHTML = `<span style="color: #FFFFFF">Inversión:</span> <span style="color: #00a3e0">${Inver} </span>`;
 
 
     const plazoParrafo = document.createElement('h2');
-    plazoParrafo.classList.add('card-title', 'font-weight-bolder');
+    plazoParrafo.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     plazoParrafo.innerHTML = `<span style="color: #FFFFFF">Plazo:</span> <span style="color: #00a3e0">${plazoInput} </span>`;
 
     const tasaP = document.createElement('h2');
-    tasaP.classList.add('card-title', 'sans-serif');
+    tasaP.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     tasaP.innerHTML = `<span style="color: #FFFFFF">Tasa del Período:</span> <span style="color: #00a3e0">${tasaPer} %</span>`;
 
     const tasaEfectiva = document.createElement('h2');
-    tasaEfectiva.classList.add('card-title', 'sans-serif');
+    tasaEfectiva.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     tasaEfectiva.innerHTML = `<span style="color: #FFFFFF">Tasa efectiva anual:</span> <span style="color: #00a3e0">${tasa} %</span>`;
 
     const interesTotal = document.createElement('h2');
-    interesTotal.classList.add('card-title', 'sans-serif');
+    interesTotal.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     interesTotal.innerHTML = `<span style="color: #FFFFFF">Interés:</span> <span style="color: #00a3e0">${intTotal}</span>`;
 
     const retencionTotal = document.createElement('h2');
-    retencionTotal.classList.add('card-title', 'sans-serif');
+    retencionTotal.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     retencionTotal.innerHTML = `<span style="color: #FFFFFF">Retención en la fuente:</span> <span style="color: #00a3e0">${retencion}</span>`;
 
     const totalTotal = document.createElement('h2');
-    totalTotal.classList.add('card-title', 'sans-serif');
+    totalTotal.classList.add('card-title', 'sans-serif', 'font-weight-bolder');
     totalTotal.innerHTML = `<span style="color: #FFFFFF">Valor a Recibir:</span> <span style="color: #00a3e0"> ${totalGeneral}</span>`;
 
     //Agregar los parrafos al divCita
