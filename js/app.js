@@ -108,15 +108,15 @@ function nuevaSimulacion(e) {
     switch (plazoInput) {
         case 180:
             tasaPeriodo = Math.round10((((1 + tasa180) ** (1 / 365)) ** plazoInput) - 1, -5);
-            tasa = tasa180 * 100;
+            tasa = Math.round10((tasa180 * 100), -5);
             break;
         case 270:
             tasaPeriodo = Math.round10((((1 + tasa270) ** (1 / 365)) ** plazoInput) - 1, -5);
-            tasa = tasa270 * 100;
+            tasa = Math.round10((tasa270 * 100), -5);
             break;
         case 360:
             tasaPeriodo = Math.round10((((1 + tasa360) ** (1 / 365)) ** plazoInput) - 1, -5);
-            tasa = tasa360 * 100;
+            tasa = Math.round10((tasa360 * 100), -5);
             break;
         default:
             break;
@@ -125,7 +125,7 @@ function nuevaSimulacion(e) {
 
     //Inver = formatterPeso.format(inver)
     Inver = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(inver);
-    tasaPer = tasaPeriodo * 100;
+    tasaPer = Math.round10((tasaPeriodo * 100), -5);
     interes = inver * tasaPeriodo;
     intTotal = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 0 }).format(interes);
     subTotal = inver + interes;
