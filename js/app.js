@@ -8,9 +8,9 @@ const resultado = document.querySelector("#resultado");
 const contenedorSimulacion = document.querySelector('#simulacion');
 
 //Variable tasa
-const tasa180 = 0.13;
-const tasa270 = 0.135;
-const tasa360 = 0.14;
+const tasa180 = 0.1425;
+const tasa270 = 0.145;
+const tasa360 = 0.1475;
 
 let tasa;
 
